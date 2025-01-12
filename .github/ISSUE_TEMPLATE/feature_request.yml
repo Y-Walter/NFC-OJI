@@ -1,0 +1,45 @@
+name: Feature
+description: "Suggest an idea for this project"
+title: "[FEATURE] New Feature Title"
+labels:
+  - enhancement
+  - "priority: medium"
+assignees:
+  - Y-Walter
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Enter a clear and concise description of the feature you want to add.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: "Is your feature request related to a problem? Please describe."
+      placeholder: "I'm always frustrated when..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Solution
+      description: "Describe the solution you'd like"
+      placeholder: "I'd like it if..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives
+      description: "Describe alternatives you've considered"
+      placeholder: "A different approach could be..."
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: "Add any other context or screenshots about the feature request here."
+      placeholder: "Add any other context or screenshots about the feature request here."

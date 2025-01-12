@@ -1,0 +1,106 @@
+name: Bug
+description: "Create a report to help us improve"
+title: "[BUG] New Report Title"
+labels:
+  - bug
+  - "priority: medium"
+assignees:
+  - Y-Walter
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before submitting a bug report, please ensure that you have:
+        - Searched open and closed issues for duplicates
+        - Reviewed the documentation and the troubleshooting guide
+        - Ensured that you are running the latest version of the project
+        - Provided all the required information below
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: "A clear and concise description of what the bug is."
+      placeholder: "I'm always frustrated when..."
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: "Steps to reproduce the behavior:"
+      placeholder: "1. Go to '...'"
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: "A clear and concise description of what you expected to happen."
+      placeholder: "I expected..."
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: "A clear and concise description of what actually happened."
+      placeholder: "Instead..."
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: "Enter the version of the app where the bug was found."
+      placeholder: "1.0.0"
+      value: "1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: build
+    attributes:
+      label: Build
+      description: "Enter the build number of the app where the bug was found."
+      placeholder: "1"
+      value: "1"
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device
+      description: "Enter the device where the bug was found."
+      placeholder: "Pixel 5"
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: OS
+      description: "Select the OS where the bug was found."
+      options:
+        - Android
+        - iOS
+        - Windows
+        - macOS
+        - Linux
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: "Enter the version of the OS where the bug was found."
+      placeholder: "22"
+    validations:
+      required: true
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: "Add any other context about the problem here."
+      placeholder: "Add any other context about the problem here."
+  - type: input
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: "If applicable, add screenshots to help explain your problem."
+      placeholder: "Add screenshots here."

@@ -1,0 +1,19 @@
+blank_issues_enabled: false
+contact_links:
+  - name: General Support
+    url: https://github.com/Y-Walter/NFC-OJI/discussions
+    about: Please use our discussion board for general queries and support.
+
+defaults:
+ - template: bug_report.yml
+   name: Bug
+   about: Create a report to help us improve
+ - template: feature_request.yml
+   name: Feature Request
+   about: Suggest an idea for this project
+ - template: document_change_request.yml
+   name: Document Change Request
+   about: Request a change to the documentation
+ - template: refactor_request.yml
+   name: Refactor Request
+   about: Request a code refactor

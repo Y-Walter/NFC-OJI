@@ -1,0 +1,35 @@
+name: Document
+description: Request a change to the documentation
+title: "[DOCUMENT] New Document Title"
+labels:
+  - documentation
+  - "priority: medium"
+assignees:
+  - Y-Walter
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Enter a clear and concise description of the document change you want to make.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: "Is your document change request related to a problem? Please describe."
+      placeholder: "I'm always frustrated when..."
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Solution
+      description: "Describe the solution you'd like"
+      placeholder: "I'd like it if..."
+    validations:
+      required: true
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Attachments
+      description: "Attach any files or screenshots that help explain your document change request."
+      placeholder: "Attach any files or screenshots that help explain your document change request."
